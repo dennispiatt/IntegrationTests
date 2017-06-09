@@ -1,0 +1,6 @@
+.vs/
+[Bb]in/
+*.feature.cs
+obj/
+packages/
+*.Designer.cs
