@@ -1,0 +1,102 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OperationsCockpit.Integration.Test.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Setting" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">testhrthrt</Value>
+    </Setting>
+    <Setting Name="RegionId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">7</Value>
+    </Setting>
+    <Setting Name="OperationsCockpitStartUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://Portal-MI.doubleline.us/OperationsCockpit-DV</Value>
+    </Setting>
+    <Setting Name="OperationsCockpitRegisterUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://Portal-MI.doubleline.us/OperationsCockpit-DV-STS/Account/Register</Value>
+    </Setting>
+    <Setting Name="RegionAdminUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">regionadmin@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="RegionAdminUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="DistrictSuperintendentUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">districtsuperintendent@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="DistrictSuperintendentUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TechnicalContactUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">technicalcontact@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TechnicalContactUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="District1TechContact1UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">district1TechContact1@test.com</Value>
+    </Setting>
+    <Setting Name="District1TechContact1UserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestDistrictSuperintendentUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">districtsuperintendent@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestDistrictSuperintendentUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestUserUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">testuser@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestUserUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="JaneDoeUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">jane.doe@test.com</Value>
+    </Setting>
+    <Setting Name="JaneDoeUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="district1TechContact2UserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">district1TechContact2@test.com</Value>
+    </Setting>
+    <Setting Name="district1TechContact2UserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestOperationsManagerUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">operationsmanager@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestOperationsManagerUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestDataHubDataCustodianUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">datahubdatacustodian@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestDataHubDataCustodianUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestDataHubSuperintendentUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">datahubsuperintendent@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestDataHubSuperintendentUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestDatahubSuperintendentProxyUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">datahubsuperintendentproxy@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestDatahubSuperintendentProxyUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="TestDistrictSuperintendentProxyUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">districtsuperintendentproxy@operationscockpit.com</Value>
+    </Setting>
+    <Setting Name="TestDistrictSuperintendentProxyUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1Password!</Value>
+    </Setting>
+    <Setting Name="Browser" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">PhantomJS</Value>
+    </Setting>
+    <Setting Name="AppHost" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">portal-mi.doubleline.us</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,9 +1,10 @@
 ﻿using BoDi;
+using Coypu;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 using Zukini.UI.Steps;
 
-namespace OperationsCockpit.Coypu.Steps
+namespace OperationsCockpit.Integration.Test.Steps
 {
     [Binding]
     public class DistrictSteps : UISteps
@@ -56,8 +57,8 @@ namespace OperationsCockpit.Coypu.Steps
             landingPage.AssertCurrentPage(DisplayText);
         }
 
-        [Given(@"There is not already an item named '(.*)' in the '(.*)' section")]
-        public void GivenThereIsNotAlreadyAnItemNamedInTheSection(string LinkDisplayText, string SectionDisplayText)
+        [Given(@"There is not an item named '(.*)' in the '(.*)' section")]
+        public void GivenThereIsNotAnItemNamedInTheSection(string LinkDisplayText, string SectionDisplayText)
         {
             var thisPage = new DistrictPage(Browser);
             if (thisPage.IntegrationLink(LinkDisplayText, SectionDisplayText).Exists())
@@ -66,6 +67,30 @@ namespace OperationsCockpit.Coypu.Steps
             } 
         }
 
+        [Given(@"There is an item named '(.*)' in the '(.*)' section")]
+        public void GivenThereIAnItemNamedInTheSection(string LinkDisplayText, string SectionDisplayText)
+        {
+            var thisPage = new DistrictPage(Browser);
+            if (!(thisPage.IntegrationLink(LinkDisplayText, SectionDisplayText).Exists()))
+            {
+                Assert.Ignore(string.Format("{0} does not exist in {1}", LinkDisplayText, SectionDisplayText));
+            }
+        }
+
+        [Given(@"I navigate to district '(.*)' in ISD '(.*)' District Page")]
+        public void GivenINavigateToTheDistrictPage(string DistrictName, string IsdName)
+        {
+            NavigateToPage(Browser, IsdName, DistrictName);
+        }
+
+        public static void NavigateToPage(BrowserSession Browser, string IsdName, string DistrictName)
+        {
+            var thisPage = new DistrictListPage(Browser);
+            thisPage.IsdTab(IsdName).Click();
+            thisPage.DistrictLink(DistrictName).Click();
+            var landingPage = new DistrictPage(Browser);
+            landingPage.AssertCurrentPage(DistrictName);
+        }
 
     }
 }

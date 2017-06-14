@@ -3,7 +3,7 @@ using NUnit.Framework;
 using TechTalk.SpecFlow;
 using Zukini.UI.Steps;
 
-namespace OperationsCockpit.Coypu.Steps
+namespace OperationsCockpit.Integration.Test.Steps
 {
     [Binding]
     public class AgreementSteps : UISteps
@@ -19,7 +19,7 @@ namespace OperationsCockpit.Coypu.Steps
             var thisPage = new AgreementPage(Browser);
             if (thisPage.AgreementStatus() == "Pending")
             {
-                thisPage.AgreementAcceptanceOption("I have read and accepted terms of agreement").Click();
+                thisPage.AgreementAcceptanceOption("true").Click();
                 thisPage.AgreementAcceptanceButton("Save").Click();
             }
             else if (thisPage.AgreementStatus() == "Accepted") {

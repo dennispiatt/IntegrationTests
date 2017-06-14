@@ -3,7 +3,7 @@ using NUnit.Framework;
 using TechTalk.SpecFlow;
 using Zukini.UI.Steps;
 
-namespace OperationsCockpit.Coypu.Steps
+namespace OperationsCockpit.Integration.Test.Steps
 {
     [Binding]
     public class AgreementListSteps : UISteps

@@ -4,7 +4,7 @@ using NUnit.Framework;
 using TechTalk.SpecFlow;
 using Zukini.UI.Steps;
 
-namespace OperationsCockpit.Coypu
+namespace OperationsCockpit.Integration.Test.Steps
 {
     [Binding]
     public class LoginSteps : UISteps
@@ -22,7 +22,7 @@ namespace OperationsCockpit.Coypu
             var thisPage = new LoginPage(Browser);
             thisPage.AssertCurrentPage();
         }
-        [When(@"I enter the '(.*)' username and password")]
+        [When(@"I enter the (.*) username and password")]
         public void WhenIEnterTheUsernameAndPassword(string UserIdentifier)
         {
             _userIdentifier = UserIdentifier;
@@ -72,7 +72,7 @@ namespace OperationsCockpit.Coypu
             thisPage.logIn.Click();
         }
 
-        [Then(@"I should see '(.*)' in the results")]
+        [Then(@"I should see (.*) in the results")]
         public void ThenIShouldSeeInTheResults(string ExpectedValue)
         {
             if (Browser.HasContent(LoginPage.InvalidUserString))
@@ -85,9 +85,11 @@ namespace OperationsCockpit.Coypu
         [AfterScenario]
         public void AfterScenario()
         {
-            Browser.ClickLink("Log off");
-            Browser.Dispose();
+            if (ScenarioContext.Current.TestError == null)
+            {
+                Browser.ClickLink("Log off");
+                Browser.Dispose();
+            }
         }
-
     }
 }

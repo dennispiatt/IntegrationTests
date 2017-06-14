@@ -1,7 +1,6 @@
 ﻿Feature: AgreementList
 Display the agreement list for a district
 
-@ignore 
 Scenario: Go To Agreement Page
 	Given I am logged in as 'DistrictSuperintendent'
 	And I am on the home page

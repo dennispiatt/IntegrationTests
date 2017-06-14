@@ -20,5 +20,15 @@ public class InboundIntegrationPage : BasePage
         base.AssertCurrentPage("Manage Integration", Browser.Title == pageTitle && Browser.HasContent(DisplayText));
     }
 
+    public SchedulePartialPage Schedule {
+        get
+        {
+            return new SchedulePartialPage(Browser);
+        }
+    }
+
+    public void Submit() { Browser.ClickButton("Submit"); }    
+
+
 }
 

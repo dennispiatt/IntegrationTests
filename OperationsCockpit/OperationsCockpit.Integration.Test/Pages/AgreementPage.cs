@@ -17,9 +17,9 @@ public class AgreementPage : BasePage
         return regEx.Match(statusString).Groups[1].Captures[0].Value;
     }
 
-    public ElementScope AgreementAcceptanceOption(string DisplayText)
+    public ElementScope AgreementAcceptanceOption(string Value)
     {
-        return Browser.FindCss("#Accepted", text:DisplayText);
+        return Browser.FindCss(string.Format("#Accepted[value={0}]",Value));
     }
 
     public ElementScope AgreementAcceptanceButton(string DisplayText)

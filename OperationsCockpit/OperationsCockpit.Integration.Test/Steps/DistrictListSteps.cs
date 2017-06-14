@@ -3,7 +3,7 @@ using NUnit.Framework;
 using TechTalk.SpecFlow;
 using Zukini.UI.Steps;
 
-namespace OperationsCockpit.Coypu
+namespace OperationsCockpit.Integration.Test.Steps
 {
     [Binding]
     class DistrictListSteps : UISteps
@@ -69,6 +69,5 @@ namespace OperationsCockpit.Coypu
             var landingPage = new DistrictPage(Browser);
             landingPage.AssertCurrentPage(DistrictName);
         }
-
     }
 }

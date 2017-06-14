@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsCockpit.Coypu", "OperationsCockpit.Coypu\OperationsCockpit.Coypu.csproj", "{5607B3A4-83B8-428C-843E-27EB34C5BFCF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperationsCockpit.Integration.Test", "OperationsCockpit.Integration.Test\OperationsCockpit.Integration.Test.csproj", "{5607B3A4-83B8-428C-843E-27EB34C5BFCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
