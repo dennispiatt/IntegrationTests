@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="Setting" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">testhrthrt</Value>
+      <Value Profile="(Default)">testhrthrthhhh</Value>
     </Setting>
     <Setting Name="RegionId" Type="System.String" Scope="Application">
       <Value Profile="(Default)">7</Value>

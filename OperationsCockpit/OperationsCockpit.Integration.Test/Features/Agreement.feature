@@ -10,7 +10,8 @@ Scenario: Sign the Agreement
 	And I click on the 'Agreements' Menu Button
 	And I click on 'Agreement List' Menu Option on the 'Agreements' Menu Button
 	And I am on the 'Bay-Arenac ISD' Agreement List Page
-	And I click on the View Agreement Link for 'Data Hosting Agreement - GMEC'
-	And I am on the 'Data Hosting Agreement - GMEC' Agreement page
+	And I click on the View Agreement Link for 'Data Hosting Agreement'
+	And I am on the 'Data Hosting Agreement' Agreement page
 	When I execute Agreement Acceptance sequence
 	Then I should see 'Accepted' in the results
+

@@ -10,5 +10,5 @@ Scenario: Go To Agreement Page
 	And I click on the 'Agreements' Menu Button
 	And I click on 'Agreement List' Menu Option on the 'Agreements' Menu Button
 	And I am on the 'Bay-Arenac ISD' Agreement List Page
-	When I click on the View Agreement Link for 'Data Hosting Agreement - GMEC'
-	Then I should be on the Agreement page for 'Data Hosting Agreement - GMEC'
+	When I click on the View Agreement Link for 'Data Hosting Agreement'
+	Then I should be on the Agreement page for 'Data Hosting Agreement'   

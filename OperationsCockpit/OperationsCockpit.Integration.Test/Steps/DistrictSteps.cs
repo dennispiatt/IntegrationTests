@@ -44,6 +44,7 @@ namespace OperationsCockpit.Integration.Test.Steps
         }
 
         [When(@"I click on the '(.*)' link in the '(.*)' section")]
+        [Given(@"I click on the '(.*)' link in the '(.*)' section")]
         public void WhenIClickOnTheLinkInTheSection(string LinkDisplayText, string SectionDisplayText)
         {
             var thisPage = new DistrictPage(Browser);

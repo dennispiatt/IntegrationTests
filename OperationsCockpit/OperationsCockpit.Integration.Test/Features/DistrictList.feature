@@ -11,6 +11,6 @@ Scenario: Expand an ISD Tab
 Scenario: Select A District
 	Given I am logged in as 'RegionAdmin'
 	And I am on the home page
-	And the 'Bay-Arenac ISD' tab is expanded
+	And the 'Bay-Arenac ISD' tab is expanded  
 	When I click on the 'Bay-Arenac ISD' link
 	Then I should be on the District page for 'Bay-Arenac ISD'

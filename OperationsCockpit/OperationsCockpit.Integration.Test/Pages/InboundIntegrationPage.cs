@@ -27,8 +27,23 @@ public class InboundIntegrationPage : BasePage
         }
     }
 
-    public void Submit() { Browser.ClickButton("Submit"); }    
+    public SourcePartialPage Source
+    {
+        get
+        {
+            return new SourcePartialPage(Browser);
+        }
+    }
 
+    public ElementScope SystemType { get { return Browser.FindField("systemType"); } }
+    public ElementScope Vendor { get { return Browser.FindField("vendor"); } }
+    public ElementScope System { get { return Browser.FindField("system"); } }
+    public ElementScope Year { get { return Browser.FindCss("select[ng-model='ctrl.integration.SchoolYear']"); } }
+    public ElementScope NotificationEmail { get { return Browser.FindField("emails"); } }
 
+    public void Submit() {
+        ElementScope submit = Browser.FindCss("a[ng-click='ctrl.submit(ctrl.model)']");
+        submit.Click();
+        bool SpinnyMissing = submit.FindCss("span.btn-spinner").Missing();
+    }
 }
-

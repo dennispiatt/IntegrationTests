@@ -3,7 +3,7 @@
   As a user of the website
   I want to log into the website
 
-Scenario Outline: Login As User
+Scenario Outline: Login As User  
 Given I am at the login page
 When I enter the <user> username and password
 And I click the login button
